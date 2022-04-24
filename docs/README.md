@@ -38,7 +38,8 @@ flush privileges;
 /canary-platform/data
 
 http://49.232.6.131:8072/
-http://49.232.6.131:8072/users/login
+http://49.232.6.131:8072/login
+https://sso-test.7otech.com/
 admin
 admin
 
