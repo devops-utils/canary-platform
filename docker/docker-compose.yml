@@ -28,6 +28,7 @@ services:
       - ./canary/data:/canary-platform/data
       - ./canary/logs:/canary-platform/logs
       - ../accounts:/canary-platform/accounts
+      - ../canary_platform:/canary-platform/canary_platform
       - /etc/localtime:/etc/localtime
     #depends_on:
     #  - mysql80
