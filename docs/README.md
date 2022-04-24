@@ -50,6 +50,8 @@ sudo docker-compose up
 sudo docker-compose up -d
 
 sudo docker-compose build ldap-admin
+sudo rm -rf ldap/data/
+sudo rm -rf ldap/logs/
 
 sudo docker-compose up ldap-admin
 sudo docker-compose up -d ldap-admin
