@@ -111,7 +111,7 @@ class LdapServer(models.Model):
     host = models.CharField(u"地址", max_length=40, unique=True, db_index=True)
     port = models.IntegerField(u"端口", default=389)
     user = models.CharField(u"管理用户", max_length=100)
-    password = models.CharField(u"管理密码", max_length=100)
+    password = models.CharField(u"管理密码", max_length=256)
     use_ssl = models.BooleanField(default=False)
     ldap_server = models.CharField(choices=LDAP_TYPE, verbose_name='ldap类型', max_length=30, default='openldap')
     desc = models.CharField(u"描述", max_length=64, blank=True, null=True)
