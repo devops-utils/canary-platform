@@ -44,7 +44,6 @@ admin
 admin
 
 test
-UoWFIkLwmmOUtiMl
 
 sudo docker stop canary-platform
 sudo docker rm canary-platform
