@@ -50,8 +50,8 @@ sudo docker-compose up
 sudo docker-compose up -d
 
 sudo docker-compose build canary-platform
-sudo rm -rf ldap/data/
-sudo rm -rf ldap/logs/
+sudo rm -rf canary/data/
+sudo rm -rf canary/logs/
 
 sudo docker-compose up canary-platform
 sudo docker-compose up -d canary-platform
@@ -61,7 +61,7 @@ sudo docker exec -it canary-platform-fe bash
 
 sudo docker-compose logs -f
 
-sqlite3 ldap/data/db.sqlite3
+sqlite3 canary/data/db.sqlite3
 
 sudo docker push yiluxiangbei/canary-platform:20220424
 
