@@ -1,4 +1,4 @@
-FROM yiluxiangbei/ldap-admin:20220424
+FROM yiluxiangbei/canary-platform:20220424
 
 COPY online.conf online.conf
 

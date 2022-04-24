@@ -2,7 +2,7 @@ version: '3'
 services:
   mysql80:
     image: mysql:8.0
-    container_name: ldap-admin-mysql
+    container_name: canary-platform-mysql
     ports:
       - "3306:3306"
     command:
@@ -16,18 +16,18 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: ldap123456
     restart: always
-  ldap-admin:
-    # image: yiluxiangbei/ldap-admin:20220424
+  canary-platform:
+    # image: yiluxiangbei/canary-platform:20220424
     build:
       context: ldap-fe
       dockerfile: Dockerfile
-    container_name: ldap-admin-fe
+    container_name: canary-platform-fe
     ports:
       - "8072:8080"
     volumes:
-      - ./ldap/data:/ldap-admin/data
-      - ./ldap/logs:/ldap-admin/logs
-      - ../accounts:/ldap-admin/accounts
+      - ./ldap/data:/canary-platform/data
+      - ./ldap/logs:/canary-platform/logs
+      - ../accounts:/canary-platform/accounts
       - /etc/localtime:/etc/localtime
     #depends_on:
     #  - mysql80
