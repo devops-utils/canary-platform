@@ -19,14 +19,14 @@ services:
   canary-platform:
     # image: yiluxiangbei/canary-platform:20220424
     build:
-      context: ldap-fe
+      context: canary-fe
       dockerfile: Dockerfile
     container_name: canary-platform-fe
     ports:
       - "8072:8080"
     volumes:
-      - ./ldap/data:/canary-platform/data
-      - ./ldap/logs:/canary-platform/logs
+      - ./canary/data:/canary-platform/data
+      - ./canary/logs:/canary-platform/logs
       - ../accounts:/canary-platform/accounts
       - /etc/localtime:/etc/localtime
     #depends_on:
