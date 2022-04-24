@@ -64,6 +64,7 @@ sudo docker-compose logs -f
 sqlite3 canary/data/db.sqlite3
 
 sudo docker push yiluxiangbei/canary-platform:20220424
+# Successfully installed mysqlclient-2.1.0
 
 docker rmi `docker images | grep none | awk '{print $3}'`
 ```
