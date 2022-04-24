@@ -42,6 +42,9 @@ http://49.232.6.131:8072/users/login
 admin
 admin
 
+test
+UoWFIkLwmmOUtiMl
+
 sudo docker stop canary-platform
 sudo docker rm canary-platform
 
